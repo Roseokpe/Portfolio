@@ -1,14 +1,14 @@
 * {
-  padding: 0;
 
+  padding: 0;
   box-sizing: border-box;
   background-color: rgba(25, 23, 101, 1);
 }
 
 body {
   font-family: "roboto", sans-serif;
-  /* font-size: 14px; */
-  justify-content: center;
+  font-size: 14px; 
+  
  
 
 }
@@ -24,11 +24,19 @@ body {
 .head-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: url("images/top\ circles.png") top center no-repeat;
 }
 .head-container .headline {
   text-align: center;
   color: #C8C8D4;
+}
+.headline hr{
+  border: 0;
+  height: 1px;
+  background:  #C8C8D4;
+  margin: 10px 0;
+   
 }
 
 .head-container .headline .primary-text {
@@ -44,6 +52,8 @@ body {
     font-size: 24px;
     font-style: 500;
     font-weight: 500;
+    margin-left: 24px;
+    gap: 24;
     
 }
 
@@ -63,24 +73,117 @@ body {
 
 
 }
+
+.frame38-container .frameworks p{
+  display: flex;
+  width: 105px;
+  align-items: center;
+}
+.support-item {
+  /* Supproting Item */
+
+
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  
+  position: static;
+  width: 200px;
+    
+  
+  
+  
+  /*display: flex;
+  flex-direction: column;
+  align-items: center; */
+  
+}
 .social-media {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 200px;
-    align-items: center;
-    max-height: 40px;
-    
-    /* margin-top: 10px;*/
-    
+  /* Social Media */
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  justify-content: space-between;
+ 
 
-    }
-.support-item .element-right{
+  }
+
+.social-media .linkedin-icon{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 77px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+
+  
+  width: 40px;
+  height: 40px;
+  left: 40px;
+  top: 0px;
+
+  border-radius: 8px;
+  }
+
+  .social-media .Twitter-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    
+    position: static;
+    width: 40px;
     height: 40px;
+    left: 120px;
+    top: 0px;
     
+    border-radius: 8px;
+
+  }
+
+
+.element-right{
+ 
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+   padding: 4px 0px;
+
+   width: 77px;
+   height: 40px;
+   
+  
+}
+
+.element-right p{
+
+  width: 47px;
+  height: 32px;
+  left: 30px;
+  top: 4px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+/* identical to box height, or 160% */
+
+  text-align: center;
+
+  color: #A2A3AE;
+}
+
+.element-right a {
+   /* Group 55 */
+
+
+  position: static;
+  width: 18px;
+  height: 21.3px;
+  left: 0px;
+  top: 9.35px;
 }
