@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 
-.nav-container .toolbar {
+.header-container .toolbar {
   display: flex;
   justify-content: space-between;
   padding-left: 55px;
@@ -46,7 +46,7 @@ body {
   color: #fff;
 }
 
-.head-container {
+.section-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,7 +54,7 @@ body {
   background: url("images/top\ circles.png") top center no-repeat;
 }
 
-.head-container .headline {
+.section-container .headline {
   text-align: center;
   color: #c8c8d4;
 }
@@ -66,15 +66,14 @@ body {
   margin: 10px 0;
 }
 
-.head-container .headline .primary-text {
+.section-container .headline .primary-text {
   color: #7d73fc;
   font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
+  font-size: 20px;
   line-height: 44px;
 }
 
-.head-container .headline .support-text {
+.section-container .headline .support-text {
   color: #edecff;
   font-size: 32px;
   font-style: normal;
@@ -92,16 +91,11 @@ body {
 }
 
 .frame38-container .frameworks .framework-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 7.74194px;
-  position: static;
-  width: 120px;
-  height: 175.48px;
-  left: 0;
-  top: 38.67px;
-}
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    left: 0;
+  }
 
 .frame38-container div {
   width: 50%;
@@ -109,22 +103,27 @@ body {
 
 .frame38-container h4 {
   color: #9490ff;
+  
+}
+
+.frame38-container ul{
+  list-style: none;
+}
+
+.frame38-container li{
+  padding: 10px 0 0 0;
 }
 
 .support-item {
-  /* Supproting Item */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 200px;
   height: 104px;
-  left: 87.5px;
-  top: 1092.15px;
+  
 }
 
 .social-media {
-  /* Social Media */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -170,7 +169,6 @@ body {
 }
 
 .element-right a {
-  /* Group 55 */
   position: static;
   width: 18px;
   height: 21px;
