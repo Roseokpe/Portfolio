@@ -30,20 +30,20 @@ body {
 
 .head-container .headline {
   text-align: center;
-  color: #C8C8D4;
+  color: #c8c8d4;
 }
 
 
 .headline hr{
   border: 0;
   height: 1px;
-  background:  #C8C8D4;
+  background:  #c8c8d4;
   margin: 10px 0;
 }
 
 
 .head-container .headline .primary-text {
-  color:#7D73FC ;
+  color: #7d73fc; ;
   font-style: solid;
   font-weight: bold;
   font-size: 32px;
@@ -51,7 +51,7 @@ body {
 
 
 .head-container .headline .support-text {
-  color: #EDECFF;
+  color: #edecff;
   font-size: 24px;
   font-style: 500;
   font-weight: 500;
@@ -75,7 +75,7 @@ body {
 } 
 
 .frame38-container h4{
-  color: #9490FF;
+  color: #9490ff;
 }
 
 /*
@@ -149,7 +149,7 @@ body {
 .element-right p{
 
   width: 47px;
-  color: #A2A3AE;
+  color: #a2a3ae;
   text-align: center;
   height: 32px;
   left: 30px;
