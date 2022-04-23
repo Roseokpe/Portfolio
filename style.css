@@ -68,18 +68,19 @@ body {
 
 .head-container .headline .primary-text {
   color: #7d73fc;
-  font-style: solid;
-  font-weight: bold;
-  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 44px;
 }
 
 .head-container .headline .support-text {
   color: #edecff;
-  font-size: 24px;
-  font-style: 500;
+  font-size: 32px;
+  font-style: normal;
   font-weight: 500;
   margin-left: 24px;
-  gap: 24;
+  line-height: 16px;
 }
 
 .frame38-container {
