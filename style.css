@@ -91,11 +91,11 @@ body {
 }
 
 .frame38-container .frameworks .framework-list {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 120px;
-    left: 0;
-  }
+  flex-direction: column;
+  align-items: flex-start;
+  width: 120px;
+  left: 0;
+}
 
 .frame38-container div {
   width: 50%;
@@ -103,14 +103,13 @@ body {
 
 .frame38-container h4 {
   color: #9490ff;
-  
 }
 
-.frame38-container ul{
+.frame38-container ul {
   list-style: none;
 }
 
-.frame38-container li{
+.frame38-container li {
   padding: 10px 0 0 0;
 }
 
@@ -120,7 +119,6 @@ body {
   align-items: center;
   padding: 0;
   height: 104px;
-  
 }
 
 .social-media {
