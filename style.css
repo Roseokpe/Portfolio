@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: rgba(25, 23, 101, 1);
+  margin: 0;
+}
+
+.header-container .toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 40px;
+}
+
+.frame38-container p {
+  margin: 0 0 20px 0;
+}
+
+.element-right p {
+  width: 47px;
+  color: #a2a3ae;
+  text-align: center;
+  height: 32px;
+  left: 30px;
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+.toolbar .logo {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url("images/top\ circles.png") top center no-repeat;
+}
+
+.section-container .headline {
+  text-align: center;
+  color: #c8c8d4;
+}
+
+.headline hr {
+  border: 0;
+  height: 1px;
+  background: #c8c8d4;
+  margin: 10px 0;
+}
+
+.section-container .headline .primary-text {
+  color: #7d73fc;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.section-container .headline .support-text {
+  color: #edecff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 24px;
+  line-height: 16px;
+}
+
+.frame38-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 20px auto;
+}
+
+.frame38-container .frameworks .framework-list {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 120px;
+  left: 0;
+}
+
+.frame38-container div {
+  width: 50%;
+}
+
+.frame38-container h4 {
+  color: #9490ff;
+}
+
+.frame38-container ul {
+  list-style: none;
+}
+
+.frame38-container li {
+  padding: 10px 0 0 0;
+}
+
+.support-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  height: 104px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  margin: 20px 10px;
+}
+
+.element-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0;
+  position: static;
+  width: 77px;
+  height: 40px;
+  left: 61.5px;
+  top: 64px;
+  border-top: 8px;
+}
+
+.element-right a {
+  position: static;
+  width: 18px;
+  height: 21px;
+  left: 0;
+  top: 9.35px;
+  margin: 0 12px;
+}
