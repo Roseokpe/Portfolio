@@ -38,12 +38,13 @@ body {
   margin-bottom: 0;
 }
 
-.toolbar .logo p {
+.toolbar .logo {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #fff;
+  font-family: roboto;
 }
 
 .section-container {
@@ -123,24 +124,22 @@ body {
 
 .social-media {
   display: flex;
-  flex-direction: row;
+ /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
   padding: 0;
+
 }
 
 .social-media ul{
-  list-style: none;
-
-}
-
-.social-media li{
-  padding: 10px 0 0 0;
   display: flex;
   flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  margin: 20px 10px;
 }
 
-.social-media .linkedin-icon {
+ /* .social-media .linkedin-icon {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -163,6 +162,7 @@ body {
   left: 120px;
   border-radius: 8px;
 }
+*/
 
 .element-right {
   display: flex;
