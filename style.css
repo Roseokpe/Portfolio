@@ -44,7 +44,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #fff;
-  font-family: roboto;
+  font: roboto;
 }
 
 .section-container {
@@ -124,45 +124,18 @@ body {
 
 .social-media {
   display: flex;
- /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
   padding: 0;
-
 }
 
-.social-media ul{
+.social-media ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   gap: 1rem;
   margin: 20px 10px;
 }
-
- /* .social-media .linkedin-icon {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  left: 40px;
-  top: 0;
-  border-radius: 8px;
-}
-
-.social-media .Twitter-icon {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  position: static;
-  width: 40px;
-  height: 40px;
-  left: 120px;
-  border-radius: 8px;
-}
-*/
 
 .element-right {
   display: flex;
