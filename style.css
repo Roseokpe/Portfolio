@@ -44,7 +44,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #fff;
-  font: roboto;
+  font-family: roboto sans-serif;
 }
 
 .section-container {
