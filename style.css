@@ -169,7 +169,7 @@ body {
   margin-top: 24px 0 12px 0;
   background: url(images/portfolio\ background\ shapes\ mobile@2x.png) top center no-repeat;
   top: 1175px;
-  color: #DCDCE8;
+  color: #dcdce8;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -189,7 +189,7 @@ body {
 }
 
 .projects-seection .post-tittle {
-  color: #F5F5FF;
+  color: #f5f5ff;
 }
 
 .projects-seection ul {
@@ -197,30 +197,22 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
   list-style: none;
   }
 
-.projects-seection .support-text li {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  border-right: 1px solid #555;
-  padding: 8px 0;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.projects-seection .support-text li {
+.projects-seection li {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-
+  font-family: "Inter" sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  /* padding: 8px 0; */
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .work-container .bttn {
@@ -249,21 +241,6 @@ body {
   background: #2a2b33;
 }
 
-
-.projects-section .support-text{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-width: 327px;
-height: 469px;
-left: 0px;
-top: 260px;
-order: 1;
-margin: 24px 0px;
-
-}
-
 .work-tittle hr {
   border: 0;
   height: 1px;
@@ -288,32 +265,32 @@ margin: 24px 0px;
 
 .contact-section h2{
   text-align: center;
-  color: #9390FF;
+  color: #9390ff;
   font-size: 32px;
-  font-family: 'Roboto';
+  font-family: 'Roboto' sans-serif;
 }
 
-.contact-section p{
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #F5F5FF;
+.contact-section p {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
 }
 
-.contact-section form{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-left: 20px;
-justify-content: space-between;
-position: static;
-width: 327px;
-height: 292px;
-left: 24px;
-top: 324px;
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+  position: static;
+  width: 327px;
+  height: 292px;
+  left: 24px;
+  top: 324px;
 }
 
 .contact-section form input{
