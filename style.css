@@ -170,7 +170,7 @@ body {
   background: url(images/portfolio\ background\ shapes\ mobile@2x.png) top center no-repeat;
   top: 1175px;
   color: #dcdce8;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -205,7 +205,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -267,11 +267,11 @@ body {
   text-align: center;
   color: #9390ff;
   font-size: 32px;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contact-section p {
-  font-family: 'Inter',sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
