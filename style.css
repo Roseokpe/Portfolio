@@ -198,18 +198,19 @@ body {
   align-items: center;
   padding: 10px 12px;
   list-style: none;
-  }
+}
 
 .projects-seection li {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  font-family: "Inter" sans-serif;
+  font-family: "Inter",sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
   border-right: 1px solid #555;
+
   /* padding: 8px 0; */
   color: #fff;
   margin-bottom: 10px;
@@ -253,25 +254,24 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
-
 }
 
 .contact-section .frame42 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
 }
 
-.contact-section h2{
+.contact-section h2 {
   text-align: center;
   color: #9390ff;
   font-size: 32px;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto',sans-serif;
 }
 
 .contact-section p {
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -293,7 +293,7 @@ body {
   top: 324px;
 }
 
-.contact-section form input{
+.contact-section form input {
   width: 90%;
   height: 48px;
   margin-bottom: 24px;
@@ -305,7 +305,7 @@ body {
   margin-bottom: 48px;
 }
 
-.contact-section button{
+.contact-section button {
   background: #7d73fc;
   color: #fff;
   border: none;
