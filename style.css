@@ -6,6 +6,7 @@
 }
 
 body {
+  min-width: auto;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   background-color: rgba(25, 23, 101, 1);
@@ -52,7 +53,13 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   background: url("images/top\ circles.png") top center no-repeat;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 40px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .section-container .headline {
@@ -74,13 +81,18 @@ body {
   line-height: 44px;
 }
 
+.projects-seection .support-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
 .section-container .headline .support-text {
   color: #edecff;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   margin-left: 24px;
-  line-height: 16px;
+  line-height: 37px;
 }
 
 .frame38-container {
@@ -151,10 +163,191 @@ body {
 }
 
 .element-right a {
-  position: static;
   width: 18px;
   height: 21px;
   left: 0;
   top: 9.35px;
   margin: 0 12px;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: 100%;
+  min-width: 280px;
+  padding: 0 20px 0 20px;
+  margin-top: 24px 0 12px 0;
+  background: url(images/portfolio\ background\ shapes\ mobile@2x.png) top center no-repeat;
+  top: 1175px;
+  color: #dcdce8;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+
+.projects-seection > a > img {
+  width: 85vw;
+}
+
+.work-tittle h1 {
+  display: flex;
+  justify-content: space-between;
+  color: #9490ff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  list-style: 52px;
+  padding-top: 32px;
+  margin-top: 24px;
+}
+
+.projects-seection .post-tittle {
+  color: #f5f5ff;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.projects-seection ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  list-style: none;
+}
+
+.projects-seection li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.work-container .bttn {
+  background: #7d73fc;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.bttn:hover {
+  background: #7a71f7;
+}
+
+.bttn:focus {
+  background: #5e42d7;
+}
+
+.bttn:active {
+  background: #7d73fc;
+}
+
+.bttn:disabled {
+  background: #2a2b33;
+}
+
+.work-tittle hr {
+  border: 0;
+  height: 1px;
+  background: #c8c8d4;
+  margin: 10px 0;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px;
+  min-width: 280px;
+}
+
+.contact-section .frame42 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #9390ff;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-section p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+  position: static;
+  width: 327px;
+  height: 292px;
+  left: 24px;
+  top: 324px;
+}
+
+.contact-section form input {
+  width: 90%;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.contact-section form textarea {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 48px;
+}
+
+.contact-section button {
+  background: #7d73fc;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #7a71f7;
+}
+
+.button:focus {
+  background: #5e42d7;
+}
+
+.button:active {
+  background: #7d73fc;
+}
+
+.button:disabled {
+  background: #2a2b33;
 }
