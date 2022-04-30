@@ -6,7 +6,7 @@
 }
 
 body {
-  min-width: 375px;
+  min-width: auto;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   background-color: rgba(25, 23, 101, 1);
@@ -53,7 +53,13 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   background: url("images/top\ circles.png") top center no-repeat;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 40px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .section-container .headline {
@@ -152,7 +158,6 @@ body {
 }
 
 .element-right a {
-  position: static;
   width: 18px;
   height: 21px;
   left: 0;
@@ -160,12 +165,12 @@ body {
   margin: 0 12px;
 }
 
-/* Work Section */
 .work-container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 2;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 280px;
   padding: 0 20px 0 20px;
   margin-top: 24px 0 12px 0;
   background: url(images/portfolio\ background\ shapes\ mobile@2x.png) top center no-repeat;
@@ -175,6 +180,16 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+
+.projects-seection > a > img {
+  width: 85vw;
 }
 
 .work-tittle h1 {
@@ -211,8 +226,6 @@ body {
   font-weight: 500;
   line-height: 20px;
   border-right: 1px solid #555;
-
-  /* padding: 8px 0; */
   color: #fff;
   margin-bottom: 10px;
 }
@@ -250,11 +263,13 @@ body {
   margin: 10px 0;
 }
 
+
 .contact-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
+  min-width: 280px;
 }
 
 .contact-section .frame42 {
