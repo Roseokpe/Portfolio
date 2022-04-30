@@ -87,7 +87,7 @@ body {
   font-style: normal;
   font-weight: 500;
   margin-left: 24px;
-  line-height: 16px;
+  line-height: 37px;
 }
 
 .frame38-container {
@@ -166,10 +166,8 @@ body {
 }
 
 .work-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 100%;
   min-width: 280px;
   padding: 0 20px 0 20px;
   margin-top: 24px 0 12px 0;
@@ -206,6 +204,14 @@ body {
 
 .projects-seection .post-tittle {
   color: #f5f5ff;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.projects-seection .support-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 .projects-seection ul {
