@@ -81,6 +81,11 @@ body {
   line-height: 44px;
 }
 
+.projects-seection .support-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
 .section-container .headline .support-text {
   color: #edecff;
   font-size: 32px;
@@ -207,11 +212,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   line-height: 40px;
-}
-
-.projects-seection .support-text {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
 }
 
 .projects-seection ul {
