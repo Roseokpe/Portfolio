@@ -222,10 +222,6 @@ body {
   list-style: none;
 }
 
-.projects-seection a {
-  float: left;
-}
-
 .projects-seection li {
   display: flex;
   flex-direction: row;
