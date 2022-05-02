@@ -222,6 +222,10 @@ body {
   list-style: none;
 }
 
+.projects-seection a {
+  float: right;
+}
+
 .projects-seection li {
   display: flex;
   flex-direction: row;
