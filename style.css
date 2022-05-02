@@ -223,7 +223,7 @@ body {
 }
 
 .projects-seection a {
-  float: right;
+  float: none;
 }
 
 .projects-seection li {
