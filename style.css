@@ -67,6 +67,10 @@ body {
   color: #c8c8d4;
 }
 
+footer hr {
+  color: #3a3837;
+}
+
 .headline hr {
   border: 0;
   height: 1px;
@@ -334,8 +338,4 @@ body {
   text-align: center;
   color: #ebebff;
   margin-bottom: 76px;
-}
-
-footer hr {
-  color: #3a3837;
 }
