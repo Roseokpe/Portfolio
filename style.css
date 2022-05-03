@@ -269,3 +269,10 @@ body {
   margin: 10px 0;
 }
 
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 24px;
+}
+
