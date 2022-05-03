@@ -1,6 +1,5 @@
 # Portfolio: mobile version
-The second milestone in building my portfolio website, I created the mobile website section where I will list my portfolio projects. I have to use Github flow and linter for HTML & CSS, HTML & CSS best practices, configured a github repo. and prepared it for developments best practices.
-
+Third milestone of my portfolio website, we created the contact form and footer 
 
 ## Built with 
     Major Languages
@@ -13,11 +12,17 @@ The second milestone in building my portfolio website, I created the mobile webs
 ## Live Demo
     - Not applicable
 
-## Author
+## Author 1
 
     Github: @roseokpe
     Twitter: @roseokpe
     Linkedln: profile link
+
+## Author 2
+
+    Github: @AugustinAbah
+    Twitter: @Augustineabah
+    Linkedln:@Augustineabah
 
 ## Show your support
     Give a star if you like this project
