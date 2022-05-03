@@ -236,7 +236,7 @@ body {
   margin-bottom: 10px;
 }
 
-.work-container .bttn {
+.bttn {
   background: #7d73fc;
   color: #fff;
   border: none;
@@ -284,7 +284,6 @@ body {
   justify-content: space-between;
   position: static;
   width: 327px;
-  height: 292px;
   left: 24px;
   top: 324px;
 }
@@ -302,14 +301,14 @@ body {
   margin-bottom: 24px;
 }
 
-.contact-section h2 {
+.contact-container h2 {
   text-align: center;
   color: #9390ff;
   font-size: 32px;
   font-family: "Roboto", sans-serif;
 }
 
-.contact-section p {
+.contact-container p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
