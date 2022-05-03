@@ -175,7 +175,7 @@ body {
   grid-template-columns: 100%;
   min-width: 280px;
   padding: 0 20px 0 20px;
-  margin-top: 24px 0 12px 0;
+  margin: 24px 0 12px 0;
   background: url(images/portfolio\ background\ shapes\ mobile@2x.png) top center no-repeat;
   top: 1175px;
   color: #dcdce8;
@@ -276,3 +276,57 @@ body {
   padding: 100px 24px;
 }
 
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+  position: static;
+  width: 327px;
+  height: 292px;
+  left: 24px;
+  top: 324px;
+}
+
+.contact-container .frame42 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.contact-container form input {
+  width: 90%;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #9390ff;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-section p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+.contact-container form textarea {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 48px;
+}
+
+.contact-container form input {
+  width: 90%;
+  height: 48px;
+  margin-bottom: 24px;
+}
