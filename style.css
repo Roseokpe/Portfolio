@@ -130,8 +130,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  height: 104px;
+  padding-bottom: 30px;
+  height: 46px;
 }
 
 .social-media {
@@ -299,6 +299,7 @@ body {
   width: 90%;
   height: 48px;
   margin-bottom: 24px;
+  padding-left: 20px;
 }
 
 .contact-container h2 {
@@ -322,6 +323,7 @@ body {
   width: 90%;
   height: 200px;
   margin-bottom: 48px;
+  padding-left: 20px;
 }
 
 .footer-text {
@@ -331,5 +333,9 @@ body {
   font-size: 20px;
   text-align: center;
   color: #ebebff;
-  margin: 0;
+  margin-bottom: 76px;
+}
+
+footer hr {
+  color: #3a3837;
 }
