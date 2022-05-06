@@ -162,7 +162,7 @@ hr {
   background: url(images/portfolio\ background\ shapes\ mobile@2x.png) center no-repeat;
   top: 1175px;
   color: #dcdce8;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -187,7 +187,7 @@ hr {
 
 .work-tittle h2 {
   color: #9490ff;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
   list-style: 52px;
@@ -197,7 +197,7 @@ hr {
 
 .projects-seection .post-tittle {
   color: #f5f5ff;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   line-height: 40px;
 }
@@ -215,7 +215,7 @@ hr {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -299,11 +299,11 @@ hr {
   text-align: center;
   color: #9390ff;
   font-size: 32px;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contact-container p {
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -320,7 +320,7 @@ hr {
 }
 
 .footer-text {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -441,7 +441,7 @@ hr {
 
   .projects-seection .post-tittle {
     color: #f5f5ff;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 32px;
     line-height: 40px;
     margin-top: 0;
@@ -470,7 +470,7 @@ hr {
   .contact-tittle2 {
     display: block;
     color: #9390ff;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 24px;
@@ -484,7 +484,7 @@ hr {
 
   .work-tittle h2 {
     color: #9490ff;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 55px;
     padding: 0 8px;
@@ -503,7 +503,7 @@ hr {
   }
 
   .frame42 p {
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
