@@ -68,7 +68,6 @@ hr {
   margin: 10px 0;
 }
 
-
 .section-container .headline .primary-text {
   color: #7d73fc;
   font-style: normal;
@@ -90,8 +89,8 @@ hr {
   line-height: 37px;
 }
 
-.support-item .workArrow .left{
-  display: none;
+.left {
+  display: none
 }
 
 .contact-tittle2 {
@@ -103,7 +102,6 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: left;
- 
 }
 
 .frame38-container .frameworks .framework-list {
@@ -134,7 +132,6 @@ hr {
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
-
 }
 
 .social-media {
@@ -152,7 +149,7 @@ hr {
   margin: 20px 10px;
 }
 
-.left{
+.left {
   display: none;
 }
 
@@ -171,7 +168,7 @@ hr {
   line-height: 20px;
 }
 
-.work-container hr{
+.work-container hr {
   border: 0;
   height: 1px;
   background-color: #555;
@@ -188,15 +185,15 @@ hr {
   width: 85vw;
 }
 
-.work-tittle h2{
+.work-tittle h2 {
   color: #9490ff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
   list-style: 52px;
-  padding-top: 0px;
+  padding-top: 0;
   line-height: 16px;
-  }
+}
   
 .projects-seection .post-tittle {
   color: #f5f5ff;
@@ -342,7 +339,6 @@ hr {
     justify-content: space-between;
     gap: 32px;
     color: #ebebff;
-   
   }
 
   .logo {
@@ -362,7 +358,6 @@ hr {
     display: flex;
     background: url(images/two-circles-header.png) center no-repeat;
     background-size: cover;
-
   } 
   
   .social-media {
@@ -398,74 +393,71 @@ hr {
     margin: 24px auto;
   }
 
-  .left {
+  .support-item .left {
     display: block;
     margin-right: 30px;
   }
 
   .right {
-  margin-left: 30px;
+    margin-left: 30px;
    }
 
   .work-container {
-  flex-direction: column;
-  background: url("images/Group-65@2x.png") center no-repeat;
-  background-size: cover;
-  padding: 10px 150px;
+    flex-direction: column;
+    background: url("images/Group-65@2x.png") center no-repeat;
+    background-size: cover;
+    padding: 10px 150px;
   }
 
   .work4 img {
-  float: right;
-
+    float: right;
   }
 
-  .projects{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 114px;
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 114px;
   }
 
   .projects-seection {
-  display: grid;
-  grid-template: auto/ 50% 50%;
-  padding: 40px 0;
-  width: 90%;
-  margin: auto;
-  height: 500px;
-  gap: 20px;
+    display: grid;
+    grid-template: auto/ 50% 50%;
+    padding: 40px 0;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    gap: 20px;
   }
 
   .projects-seection > a > img {
-  width: auto; 
-  margin-bottom: 24px;
+    width: auto; 
+    margin-bottom: 24px;
   }
 
   .project-text {
-  grid-row-end: 1;
+    grid-row-end: 1;
   }
 
-  projects-seection .post-tittle {
+  .projects-seection .post-tittle {
     color: #f5f5ff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto" ,sans-serif;
     font-size: 32px;
     line-height: 40px;
     margin-top: 0px;
     padding-top: 0px;
-}
-
-  .left-img {
-  flex-direction: row;
-  padding: 0px;
-  
   }
 
-  .right-img{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  .left-img {
+    flex-direction: row;
+    padding: 0px;
+  }
 
+  .right-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
   }
 
   .contact-container {
@@ -476,29 +468,26 @@ hr {
   }
 
   .contact-tittle2 {
-  display: block;
-  color: #9390ff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 24px;
-  text-align: center;
+    display: block;
+    color: #9390ff;
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    text-align: center;
   }
 
-
   .work-tittle {
-  display: flex;
-  margin: 24px 24px;
-
-
+    display: flex;
+    margin: 24px 24px;
   }
 
   .work-tittle h2 {
-  color: #9490ff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 55px;
-  padding: 0px 8px;
+    color: #9490ff;
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    padding: 0px 8px;
   }
 
   .contact-container form {
@@ -507,14 +496,13 @@ hr {
     align-items: center;
     width: 684px;
     padding-top: 24px;
-    
   }
 
-  .contact-tittle1{
+  .contact-tittle1 {
     display: none;
   }
 
-  .frame42 p{
+  .frame42 p {
     font-family: "Roboto" ,sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -525,14 +513,13 @@ hr {
     width: 100%;
   }
 
-  .footer-items{
+  .footer-items {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     justify-content: center;
     margin: 0px;
-
   }
 
   .footer {
@@ -560,7 +547,7 @@ hr {
     padding: 0px;
   }
       
- 
 }
+
 
 
