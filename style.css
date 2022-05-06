@@ -90,7 +90,7 @@ hr {
 }
 
 .left {
-  display: none
+  display: none;
 }
 
 .contact-tittle2 {
@@ -162,7 +162,7 @@ hr {
   background: url(images/portfolio\ background\ shapes\ mobile@2x.png) center no-repeat;
   top: 1175px;
   color: #dcdce8;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter",sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -187,17 +187,17 @@ hr {
 
 .work-tittle h2 {
   color: #9490ff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-weight: 500;
   font-size: 32px;
   list-style: 52px;
   padding-top: 0;
   line-height: 16px;
 }
-  
+
 .projects-seection .post-tittle {
   color: #f5f5ff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-size: 32px;
   line-height: 40px;
 }
@@ -215,7 +215,7 @@ hr {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter",sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -284,7 +284,7 @@ hr {
   padding: 0;
 }
 
- form .name-field {
+.form .name-field {
   display: none;
 }
 
@@ -299,11 +299,11 @@ hr {
   text-align: center;
   color: #9390ff;
   font-size: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",sans-serif;
 }
 
 .contact-container p {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -320,7 +320,7 @@ hr {
 }
 
 .footer-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -365,7 +365,7 @@ hr {
     flex-direction: row;
     list-style: none;
     gap: 1rem;
-    margin: 0px 150px;
+    margin: 0 150px;
   }
 
   .section-container .support-item {
@@ -373,9 +373,9 @@ hr {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     height: 40px;
-    margin: 88px 0px;
+    margin: 88px 0;
   }
 
   .headline hr {
@@ -400,7 +400,7 @@ hr {
 
   .right {
     margin-left: 30px;
-   }
+  }
 
   .work-container {
     flex-direction: column;
@@ -441,23 +441,23 @@ hr {
 
   .projects-seection .post-tittle {
     color: #f5f5ff;
-    font-family: "Roboto" ,sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 32px;
     line-height: 40px;
-    margin-top: 0px;
-    padding-top: 0px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .left-img {
     flex-direction: row;
-    padding: 0px;
+    padding: 0;
   }
 
   .right-img {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
   }
 
   .contact-container {
@@ -470,7 +470,7 @@ hr {
   .contact-tittle2 {
     display: block;
     color: #9390ff;
-    font-family: "Roboto" ,sans-serif;
+    font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 24px;
@@ -484,10 +484,10 @@ hr {
 
   .work-tittle h2 {
     color: #9490ff;
-    font-family: "Roboto" ,sans-serif;
+    font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 55px;
-    padding: 0px 8px;
+    padding: 0 8px;
   }
 
   .contact-container form {
@@ -503,7 +503,7 @@ hr {
   }
 
   .frame42 p {
-    font-family: "Roboto" ,sans-serif;
+    font-family: "Roboto",sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -517,9 +517,9 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     justify-content: center;
-    margin: 0px;
+    margin: 0;
   }
 
   .footer {
@@ -531,8 +531,8 @@ hr {
     flex-direction: row;
     list-style: none;
     gap: 1rem;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .social-media-icon ul {
@@ -543,8 +543,8 @@ hr {
     margin: 20px 10px;
   }
   .footer-text {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
       
 }
