@@ -375,7 +375,7 @@ hr {
     padding: 0;
     height: 40px;
     margin: 88px 0;
-  }
+  }  
 
   .headline hr {
     border: 0;
@@ -541,12 +541,10 @@ hr {
     gap: 1rem;
     margin: 20px 10px;
   }
-  
+
   .footer-text {
     margin: 0;
     padding: 0;
   }
       
 }
-
-
