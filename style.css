@@ -149,7 +149,7 @@ hr {
   margin: 20px 10px;
 }
 
-.left {
+.workArrow {
   display: none;
 }
 
@@ -332,7 +332,6 @@ hr {
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
-
   .menu ul {
     list-style: none;
     display: flex;
@@ -345,7 +344,7 @@ hr {
     font-size: 18px;
   }
 
-  .menu  ul a {
+  .menu a {
     font-size: 15px;
     color: #ebebff;
   }
@@ -359,7 +358,7 @@ hr {
     background: url(images/two-circles-header.png) center no-repeat;
     background-size: cover;
   } 
-  
+
   .social-media {
     display: flex;
     flex-direction: row;
@@ -542,12 +541,12 @@ hr {
     gap: 1rem;
     margin: 20px 10px;
   }
+  
   .footer-text {
     margin: 0;
     padding: 0;
   }
       
 }
-
 
 
