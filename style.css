@@ -340,8 +340,18 @@ hr {
     color: #ebebff;
   }
 
+  .menu:hover{
+    transform: scale(1.2);
+    transition-duration: 100ms;
+  }
+
   .logo {
     font-size: 18px;
+  }
+
+  .logo:hover{
+    transform: scale(1.5);
+    transition-duration: 1000ms;
   }
 
   .menu a {
@@ -533,17 +543,38 @@ hr {
     padding: 0;
     margin: 0;
   }
-
-  .social-media-icon ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-    margin: 20px 10px;
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
   }
-
   .footer-text {
     margin: 0;
     padding: 0;
+  }
+
+  .bttn {
+    background: #7d73fc;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: color 0.15s ease-out;
+  }
+
+  .bttn:hover {
+    background-color: grey;
+  }
+
+  h1 {
+    color: #9490ff;
+    animation-name: header;
+    animation-duration: 10s;
+  }
+
+  @keyframes header {
+    from {color: #9490ff;}
+    to {color: white;}
   }
 }

@@ -1,9 +1,10 @@
-# Portfolio: Desktop version
-Fourth milestone of my portfolio website, I used the media query to created the desktop version.
+# Animation
+In this milestone, we added transition property to desktop version of the project
+
 
 ## Built with 
     Major Languages
-    - Html and CSS
+    - CSS
     
     Major Technologies
     - VS code as IDE
@@ -18,6 +19,12 @@ Fourth milestone of my portfolio website, I used the media query to created the 
     Github: @roseokpe
     Twitter: @roseokpe
     Linkedln: profile link
+
+## Author 2
+
+    Github: @AustinAbah
+    Twitter: @AustinAbah
+    Linkedln: profile link    
 
 
 ## Show your support
