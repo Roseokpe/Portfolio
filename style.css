@@ -340,8 +340,18 @@ hr {
     color: #ebebff;
   }
 
+  .menu:hover{
+    transform: scale(1.2);
+    transition-duration: 100ms;
+  }
+
   .logo {
     font-size: 18px;
+  }
+
+  .logo:hover{
+    transform: scale(1.5);
+    transition-duration: 1000ms;
   }
 
   .menu a {
