@@ -357,8 +357,8 @@ hr {
     display: flex;
     background: url(images/two-circles-header.png) center no-repeat;
     background-size: cover;
-  } 
-
+  }
+  
   .social-media {
     display: flex;
     flex-direction: row;
@@ -375,7 +375,7 @@ hr {
     padding: 0;
     height: 40px;
     margin: 88px 0;
-  }  
+  }
 
   .headline hr {
     border: 0;
@@ -391,7 +391,7 @@ hr {
     text-align: left;
     margin: 24px auto;
   }
-
+  
   .support-item .left {
     display: block;
     margin-right: 30px;
@@ -430,7 +430,7 @@ hr {
   }
 
   .projects-seection > a > img {
-    width: auto; 
+    width: auto;
     margin-bottom: 24px;
   }
 
@@ -546,5 +546,4 @@ hr {
     margin: 0;
     padding: 0;
   }
-      
 }
