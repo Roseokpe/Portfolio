@@ -358,7 +358,7 @@ hr {
     background: url(images/two-circles-header.png) center no-repeat;
     background-size: cover;
   }
-  
+
   .social-media {
     display: flex;
     flex-direction: row;
@@ -391,7 +391,7 @@ hr {
     text-align: left;
     margin: 24px auto;
   }
-  
+
   .support-item .left {
     display: block;
     margin-right: 30px;
