@@ -1,5 +1,5 @@
-# Portfolio: Desktop version
-Fourth milestone of my portfolio website, I used the media query to created the desktop version.
+# Portfolio: Application Deploy
+For this milestone I made my portfolio website available online at https://roseokpe.github.io/Portfolio/
 
 ## Built with 
     Major Languages
@@ -11,14 +11,7 @@ Fourth milestone of my portfolio website, I used the media query to created the 
     - Linters
 
 ## Live Demo
-    - Not applicable
-
-## Author 1
-
-    Github: @roseokpe
-    Twitter: @roseokpe
-    Linkedln: profile link
-
+ https://roseokpe.github.io/Portfolio/
 
 ## Show your support
     Give a star if you like this project
