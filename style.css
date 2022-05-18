@@ -333,11 +333,11 @@ hr {
   display: none;
   width: 100%;
   height: 100%;
-  background: rgb(25 23 101 / 83%);
+  background: rgb(25 23 101 / 100%);
   position: fixed;
   top: 0;
   margin-top: 32px;
-  background-image: url(images/shapes\ mobile\ menu.png);
+  background-image: url(images/shapes\ mobile\ menu.png) no-repeat;
 }
 
 .mobile-menu .imag {
@@ -399,20 +399,6 @@ hr {
 .active .menu-list{
   left: 0;
 }
-
-/* .menu-list{
-  left: 100%;
-  position: fixed;
-  min-height: 100vh;
-  transition: 0.4s;
-  list-style: none;
-  display: flex; 
-  flex-direction: column;
-  column-gap: 42px;
-
-} */
- 
-  
 
 /* Desktop version */
 
