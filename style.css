@@ -333,11 +333,13 @@ hr {
   display: none;
   width: 100%;
   height: 100%;
-  background: rgb(25 23 101 / 100%);
+  background-color: rgb(25 23 101 / 100%);
   position: fixed;
   top: 0;
   margin-top: 32px;
-  background-image: url(images/shapes\ mobile\ menu.png) no-repeat;
+  background-image: url(images/shapes\ mobile\ menu.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .mobile-menu .imag {
@@ -354,7 +356,6 @@ hr {
   list-style: none;
   display: flex;
   flex-direction: column;
-  display: flex;
   justify-content: flex-start;
 }
 
@@ -369,7 +370,7 @@ hr {
 .menu-list li{
   display: flex;
   padding: 8px;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .hamburger div{
   width: 30px;
@@ -379,8 +380,6 @@ hr {
   cursor: pointer;
   transition: 0.4s;
   margin-left: 24px;
-  /*background: #191765;
-  */
   display: block;
   
 }
@@ -590,6 +589,7 @@ hr {
     padding: 0;
     justify-content: center;
     margin: 0;
+    list-style: none;
   }
 
   .footer {
@@ -605,13 +605,13 @@ hr {
     margin: 0;
   }
 
-  .social-media-icon ul {
+  .social-media-icon ul{
     display: flex;
     flex-direction: row;
-    list-style: none;
     gap: 1rem;
+    list-style: none;
     margin: 20px 10px;
-  }
+  } 
 
   .footer-text {
     margin: 0;
