@@ -358,7 +358,7 @@ hr {
   justify-content: flex-start;
 }
 
-.menu-list a{
+.menu-list a {
   color: #edecff;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -605,7 +605,7 @@ hr {
     margin: 0;
   }
 
-  .social-media-icon ul{
+  .social-media-icon ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -622,7 +622,7 @@ hr {
     display: none;
   }
 
-  .menu-list{
+  .menu-list {
     display: none;
   }
 
