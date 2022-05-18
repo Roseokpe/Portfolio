@@ -25,7 +25,7 @@ body {
   margin: 0 0 20px 0;
 }
 
-.toolbar .logo {
+.active .toolbar .logo {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
@@ -329,6 +329,49 @@ hr {
   margin-bottom: 76px;
 }
 
+.hamburger div{
+  width: 30px;
+  height: 3px;
+  background-color: #edecff;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-left: 24px;
+  /*background: #191765;
+  */
+  display: block;
+  
+}
+.active .bar-1{
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.active .bar-2{
+  opacity: 0;
+}
+
+.active .bar-3{
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
+.active .menu-list{
+  left: 0;
+}
+
+.menu-list{
+  left: 100%;
+  position: fixed;
+  min-height: 100vh;
+  transition: 0.4s;
+  list-style: none;
+  /*display: flex; */
+  flex-direction: column;
+  column-gap: 42px;
+
+}
+ 
+  
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
@@ -546,4 +589,13 @@ hr {
     margin: 0;
     padding: 0;
   }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu-list{
+    display: none;
+  }
+
 }
