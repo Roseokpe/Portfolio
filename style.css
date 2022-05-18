@@ -25,7 +25,7 @@ body {
   margin: 0 0 20px 0;
 }
 
- .toolbar .logo {
+.toolbar .logo {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
@@ -346,7 +346,6 @@ hr {
   display: flex;
   justify-content: flex-end;
   margin-right: 43px;
-  
 }
 
 .menu-list {
@@ -367,12 +366,13 @@ hr {
   text-decoration: none;
 }
 
-.menu-list li{
+.menu-list li {
   display: flex;
   padding: 8px;
   justify-content: space-around;
 }
-.hamburger div{
+
+.hamburger div {
   width: 30px;
   height: 3px;
   background-color: #edecff;
@@ -381,21 +381,21 @@ hr {
   transition: 0.4s;
   margin-left: 24px;
   display: block;
-  
 }
-.active .bar-1{
+
+.active .bar-1 {
   transform: rotate(-45deg) translate(-7px, 5px);
 }
 
-.active .bar-2{
+.active .bar-2 {
   opacity: 0;
 }
 
-.active .bar-3{
+.active .bar-3 {
   transform: rotate(45deg) translate(-7px, -5px);
 }
 
-.active .menu-list{
+.active .menu-list {
   left: 0;
 }
 
@@ -611,8 +611,8 @@ hr {
     gap: 1rem;
     list-style: none;
     margin: 20px 10px;
-  } 
-
+  }
+  
   .footer-text {
     margin: 0;
     padding: 0;
