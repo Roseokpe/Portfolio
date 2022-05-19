@@ -14,22 +14,51 @@
           <a>Rose Okpe</a>
         </div>
         <nav>
+          <div class="hamburger" id="hamburger-id">
+            <div class="bar-1 bar"></div>
+            <div class="bar-2" ></div>
+            <div class="bar-3" id="cross-2"></div>
+          </div>
           <div class="menu">
             <ul>
-              <li> <a href=""> Portfolio </a></li>
-              <li> <a href=""> About </a></li>
-              <li> <a href="" >Contact </a></li>
+              <li> <a href="#"> Portfolio </a></li>
+              <li> <a href="#About"> About </a></li>
+              <li> <a href="#contact" >Contact </a></li>
               <li><a href="#"><img src="images/Icon-Mail.png" alt=""></a></li>
             </ul>
-            <a class="nav-button" href="#"><img src="images/home-icon.png" alt="#">
-            </a>
           </div>
         </nav>
       </div>
+
+      <div class="mobile-menu" >
+        <div class="imag" id="cancel-id">
+          <img src="images/Icon-Cancel.png" alt="#cancel">
+        </div>
+        <ul class="menu-list">
+          <li>
+            <div class="divide-1">
+            <a href="#Portfolio">Portfolio</a>
+          <img src="images/Icon-Chevro-Right.png" alt="#director"></div></li>
+          <li>
+            <div class="divide-2">
+          <a href="#About">About</a>
+          <img src="images/Icon-Chevro-Right.png" alt="#director">
+        </div></li>
+          <li>
+            <div class="divide-3">
+            <a href="#Contact">Contact</a>
+          <img src="images/Icon-Chevro-Right.png" alt="|#director">
+        </div></li>
+        </ul>
+      </div>
+
+
     </header>
     
-    <!--    section     -->
-    <section class="section-container">
+
+    
+    <!--    Home Page section     -->
+    <section class="section-container" id="About">
         <div class="headline">
           <div class="primary-text">
             <h1>Rose Okpe</h1>
@@ -119,7 +148,7 @@
         
     </section>
     <!----  Work section   ---- -->
-    <section class="work-container">
+    <section class="work-container" id="Portfolio">
       <div class="work-tittle">
           <h2>MY RECENT </h2>
 
@@ -216,7 +245,8 @@
       </div>  
     </section>
 
-    <section class="contact-container">
+    <!-- Contact Section -->
+    <section class="contact-container" id="Contact">
       <div class="frame42">
         <h2 class="contact-tittle2"> Let’s chat!</h2>
         <h2 class="contact-tittle1">CONTACT US</h2>
@@ -236,7 +266,8 @@
       </form>
     </section>
 
-    <footer>
+<!-- Footer -->
+    <footer class="footer">
       <hr>
       <div class="support-item  footer-items">
         <div class="social-media-icon">
@@ -262,5 +293,6 @@
       </div>
 
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

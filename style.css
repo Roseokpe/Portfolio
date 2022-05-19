@@ -190,7 +190,7 @@ hr {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
-  list-style: 52px;
+  list-style: none;
   padding-top: 0;
   line-height: 16px;
 }
@@ -327,6 +327,90 @@ hr {
   text-align: center;
   color: #ebebff;
   margin-bottom: 76px;
+}
+
+.mobile-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(25 23 101 / 100%);
+  position: fixed;
+  top: 0;
+  margin-top: 32px;
+  background-image: url(images/shapes\ mobile\ menu.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.mobile-menu .imag {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 43px;
+}
+
+.menu-list {
+  left: 100%;
+  min-height: 100vh;
+  transition: 0.4s;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.menu-list a {
+  color: #edecff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.menu-list li {
+  display: flex;
+  padding: 22px;
+  justify-content: space-between;
+}
+
+.divide-1 {
+  display: flex;
+  gap: 172px;
+}
+
+.divide-2 {
+  display: flex;
+  gap: 199px;
+}
+
+.divide-3 {
+  display: flex;
+  gap: 174px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #edecff;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-left: 24px;
+}
+
+.active .bar-1 {
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.active .bar-2 {
+  opacity: 0;
+}
+
+.active .bar-3 {
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
+.active .menu-list {
+  left: 0;
 }
 
 /* Desktop version */
@@ -519,6 +603,7 @@ hr {
     padding: 0;
     justify-content: center;
     margin: 0;
+    list-style: none;
   }
 
   .footer {
@@ -537,13 +622,21 @@ hr {
   .social-media-icon ul {
     display: flex;
     flex-direction: row;
-    list-style: none;
     gap: 1rem;
+    list-style: none;
     margin: 20px 10px;
   }
 
   .footer-text {
     margin: 0;
     padding: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu-list {
+    display: none;
   }
 }
