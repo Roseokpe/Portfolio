@@ -190,7 +190,7 @@ hr {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
-  list-style: 52px;
+  list-style: none;
   padding-top: 0;
   line-height: 16px;
 }
@@ -367,12 +367,12 @@ hr {
 }
 
 .menu-list li {
-    display: flex;
-    padding: 22px;
-    justify-content: space-between;
+  display: flex;
+  padding: 22px;
+  justify-content: space-between;
 }
 
-.divide-1{ 
+.divide-1 {
   display: flex;
   gap: 172px;
 }
