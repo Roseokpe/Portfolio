@@ -380,7 +380,6 @@ hr {
   cursor: pointer;
   transition: 0.4s;
   margin-left: 24px;
-  display: block;
 }
 
 .active .bar-1 {
