@@ -1,14 +1,11 @@
 const hamburger = document.querySelector('.hamburger');
  const menuitems = document.querySelector('.menu-list');
-// const aboutContent = document.querySelector('');
-// const modal = document.querySelector('');
-  hamburger.addEventListener('click', () =>{
-  //hamburger.classList.toggle('active');
+hamburger.addEventListener('click', () =>{
   document.querySelector('.mobile-menu').style.display = 'block';
 });
 
 menuitems.addEventListener('click',() =>{
-menuitems.classList.toggle('hamburger');
+menuitems.classList.toggle('.mobile-menu');
 l});
 
 function showMenu() {

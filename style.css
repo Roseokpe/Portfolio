@@ -367,9 +367,24 @@ hr {
 }
 
 .menu-list li {
+    display: flex;
+    padding: 22px;
+    justify-content: space-between;
+}
+
+.divide-1{ 
   display: flex;
-  padding: 8px;
-  justify-content: space-around;
+  gap: 172px;
+}
+
+.divide-2 {
+  display: flex;
+  gap: 199px;
+}
+
+.divide-3 {
+  display: flex;
+  gap: 174px;
 }
 
 .hamburger div {
