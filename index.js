@@ -8,7 +8,6 @@ menuitems.addEventListener('click', () => {
   menuitems.classList.toggle('.mobile-menu');
 });
 
-
 function showMenu() {
   document.querySelector('.mobile-menu').style.display = 'block';
 }
