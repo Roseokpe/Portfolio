@@ -541,6 +541,11 @@ hr {
   display: none !important;
 }
 
+/* email vali. */
+#myform .error-msg {
+  color: red;
+}
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
