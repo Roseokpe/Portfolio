@@ -63,7 +63,7 @@ function fillModal(e) {
   const p = document.querySelector('.modal-content p');
   const img = document.querySelector('.modal-image');
   const items = document.querySelectorAll('.modal-link li');
-  h2.textContent = e.name; 
+  h2.textContent = e.name;
   p.textContent = e.description;
   img.src = e.image;
   for (let i = 0; i < items.length; i += 1) {
