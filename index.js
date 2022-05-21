@@ -24,7 +24,7 @@ document.getElementById('hamburger-id').addEventListener('click', showMenu);
 document.getElementById('cancel-id').addEventListener('click', hideMenu);
 document.querySelector('.menu-list').addEventListener('click', hideMenu);
 
-//Email validatetion
+// Email validatetion
 const myform = document.getElementById('myform');
 const email = document.getElementById('email');
 const error = document.querySelector('.error-msg');
