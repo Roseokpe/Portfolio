@@ -26,42 +26,42 @@ document.querySelector('.menu-list').addEventListener('click', hideMenu);
 
 // popup
 const projects = [{
-  id:"001", 
-  name: "Multi - Post stories-1",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the " +
-  "industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "images/Snapshoot-Portfolio.png",
-  technologies: ["HTML", "JavaScript", "CSS", "Ruby"],
-  link: "link_to_live_version.com",
+  id: '001', 
+  name: 'Multi - Post stories-1',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the ' +
+  'industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+  image: 'images/Snapshoot-Portfolio.png',
+  technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
+  link: 'link_to_live_version.com'
   },
   {
-    id:"002", 
-    name: "Multi - Post stories-2",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the " +
-    "industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: "images/Img-Placeholder.png",
-    technologies: ["HTML", "JavaScript", "CSS", "Ruby"],
-    link: "link_to_live_version.com",
+    id: '002', 
+    name: 'Multi - Post stories-2',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the'+
+    'industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    image: 'images/Img-Placeholder.png',
+    technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
+    link: 'link_to_live_version.com'
   },
   {
-    id:"003", 
-    name: "Multi - Post stories-3",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the " +
-    "industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: "images/Snapshoot-Portfolio.png",
-    technologies: ["HTML", "JavaScript", "CSS", "Ruby"],
-    link: "link_to_live_version.com",
+    id: '003', 
+    name: 'Multi - Post stories-3',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the ' +
+    'industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    image: 'images/Snapshoot-Portfolio.png',
+    technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
+    link: 'link_to_live_version.com'
   },
   {
-    id:"004", 
-    name: "Multi - Post stories-4",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the " +
-    "industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: "images/Snapshoot-Portfolio.png",
-    technologies: ["HTML", "JavaScript", "CSS", "Ruby"],
-    link: "link_to_live_version.com",
+    id: '004', 
+    name: 'Multi - Post stories-4',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the ' +
+    'industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    image: 'images/Snapshoot-Portfolio.png',
+    technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
+    link: 'link_to_live_version.com'
   }
-]
+];
 
 function fillModal(e) {
   const h2 = document.querySelector('.modal-content h2');
@@ -77,8 +77,8 @@ function fillModal(e) {
 }
 
 function getModalData(key, obj) {
-  for(var i = 0; i< obj.length; i++) {
-    if(obj[i].id === key) {
+  for (let i = 0; i < obj.length; i += 1) {
+    if (obj[i].id === key) {
       return obj[i];
     }
   }
