@@ -33,12 +33,12 @@ const modal = document.getElementById('myModal');
     });
   });
 
-// When the user clicks anywhere outside of the modal, close it
+  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
       modal.style.display = 'none';
-    }
-  }
+    };
+  };
 })();
 
 // Get the <span> element that closes the modal
@@ -47,7 +47,7 @@ const span = document.getElementsByClassName('close')[0];
 // When the user clicks on (x), it close the modal
 span.onclick = function () {
   modal.style.display = 'none';
-}
+};
 
 // email validation
 const email = document.getElementById('email');
@@ -55,25 +55,13 @@ const error = document.getElementById('error-msg');
 const form = document.getElementById('myform');
 const submitbtn = document.getElementById('submitbtn');
 
-(function () {
-  email.addEventListener('input', () => {
-    validateEmailAddress();
-  });
-
-  form.addEventListener('submit', () => {
-    validateEmailAddress();
-  });
-  
-})();
-
 // to check if the strings are in lower case
 function isLowercase(str) {
   return (/[a-z]/.test(str));
 }
 
 function validateEmailAddress () {
-  emailvalue = email.value;
- 
+  let emailvalue = email.value;
   if (!isLowercase(emailvalue)) {
     error.style.display = 'block';
     submitbtn.disabled = true;
@@ -82,5 +70,15 @@ function validateEmailAddress () {
     error.style.display = 'none';
     error.innerHTML = '';
     submitbtn.disabled = false;
-  }
-}
+  };
+
+  (function () {
+    email.addEventListener('input', () => {
+      validateEmailAddress();
+    });
+    form.addEventListener('submit', () => {
+      validateEmailAddress();
+    });
+  })();
+
+};
