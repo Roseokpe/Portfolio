@@ -21,6 +21,12 @@ body {
   padding-top: 40px;
 }
 
+.toolbar h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
 .frame38-container p {
   margin: 0 0 20px 0;
 }
