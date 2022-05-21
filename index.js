@@ -31,17 +31,18 @@ const error = document.querySelector('.error-msg');
 const submitbtn = document.getElementById('submitbtn');
 // the function below check if the email address is all lowercase or not //
 function emailCheckLowerCase() {
+  let result = false;
   if (email.value !== email.value.toLowerCase()) {
     error.classList.remove('hide');
-    return false;
   } else {
     error.classList.add('hide');
-    return true;
+    result = true;
   }
+  return result;
 }
 
-submitbtn.onclick = function (event) {
-  if (emailCheckLowerCase() == true) {
+submitbtn.onclick = function () {
+  if (emailCheckLowerCase() === true) {
     myform.submit();
   }
 };
