@@ -52,18 +52,13 @@ window.onclick = function(event) {
 }
 
 // email validation
-var email = document.getElementById('email');
-var error = document.getElementById('error-msg');
-var form = document.getElementById('myform');
-var submitbtn = document.getElementById('submitbtn');
-
-
+const email = document.getElementById('email');
+const error = document.getElementById('error-msg');
+const form = document.getElementById('myform');
+const submitbtn = document.getElementById('submitbtn');
 
 (function () {
- 
-  email.addEventListener('input', (vvt) => {
-    
-    
+  email.addEventListener('input', () => {
     validateEmailAddress();
   });
 
