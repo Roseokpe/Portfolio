@@ -33,7 +33,6 @@ const modal = document.getElementById('myModal');
     if (event.target === modal) {
       modal.style.display = 'none';
     }
-
     (function () {
       document.querySelectorAll('.raise-modal').forEach(function (trigger) {
         trigger.addEventListener('click', function () {
