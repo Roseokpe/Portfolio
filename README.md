@@ -1,5 +1,5 @@
-# Portfolio: Mobile menu
-In this milestone of my portfolio website project, We l implemented the mobile menu using recently acquired JavaScript knowledge.
+# Portfolio: Popup Window
+In milestone of my portfolio website, I implemented a popup window that includes the project details in both desktop and mobile.
 
 ## Built with 
     Major Languages

@@ -426,22 +426,22 @@ hr {
   overflow: auto;
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid #fff;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background:#a2a3ae;
+  background: #a2a3ae;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 .modal-text {
@@ -458,7 +458,7 @@ hr {
   font-family: "Inter", sans-serif;
 }
 
-.modal-link ul{
+.modal-link ul {
   display: flex;
   flex-direction: row;
   color: #fff;
@@ -480,15 +480,29 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {top: -300px; 
+    opacity: 0;
+  } 
+
+  to {
+    top: 0; 
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */
@@ -498,7 +512,6 @@ hr {
   font-size: 28px;
   font-weight: bold;
 }
-
 
 .close:hover,
 .close:focus {
@@ -522,8 +535,6 @@ hr {
   margin-bottom: 10px;
   font: size 24px;
 }
-
-
 
 /* Desktop version */
 
@@ -757,7 +768,7 @@ hr {
   }
 
   .modal-header {
-    padding: 16px 0px 6px 15px;
+    padding: 16px 0 6px 15px;
   }
 
   .modal .snap {
@@ -770,7 +781,7 @@ hr {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    font-family: 'Roboto';
+    font-family: "Inter", sans-serif;
   }
 
   .modal-link ul {
@@ -779,7 +790,6 @@ hr {
     gap: 23px;
     font-size: 20px;
     justify-content: center;
-  
   }
 
   .modal-buttons {
