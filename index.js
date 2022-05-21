@@ -28,15 +28,21 @@ document.querySelector('.menu-list').addEventListener('click', hideMenu);
 const myform = document.getElementById('myform');
 const email = document.getElementById('email');
 const error = document.querySelector('.error-msg');
-
+const submitbtn = document.getElementById('submitbtn');
 // the function below check if the email address is all lowercase or not //
-function emailCheckLowerCase(e) {
+function emailCheckLowerCase() {
   if (email.value !== email.value.toLowerCase()) {
     error.classList.remove('hide');
-    e.preventDefault();
+    return false;
   } else {
     error.classList.add('hide');
+    return true;
   }
 }
-myform.addEventListener('change', emailCheckLowerCase);
-myform.addEventListener('submit', emailCheckLowerCase);
+
+submitbtn.onclick = function (event) {
+  if (emailCheckLowerCase() == true) {
+    myform.submit();
+  }
+};
+// myform.addEventListener('change', emailCheckLowerCase);
