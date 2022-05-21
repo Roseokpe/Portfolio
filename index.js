@@ -27,8 +27,8 @@ document.querySelector('.menu-list').addEventListener('click', hideMenu);
 // popup
 const modal = document.getElementById('myModal');
 const raiseModal = document.querySelectorAll('.raise-modal');
-raiseModal.forEach(function (trigger) {
-  trigger.addEventListener('click', function () {
+raiseModal.forEach( (trigger) => {
+  trigger.addEventListener('click', () => {
     modal.style.display = 'block';
   });
 });
