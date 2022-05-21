@@ -49,36 +49,19 @@ span.onclick = function () {
   modal.style.display = 'none';
 };
 
-// email validation
+//Email validatetion
+
+const myform = document.getElementById('myform');
 const email = document.getElementById('email');
-const error = document.getElementById('error-msg');
-const form = document.getElementById('myform');
-const submitbtn = document.getElementById('submitbtn');
-
-// to check if the strings are in lower case
-function isLowercase(str) {
-  return (/[a-z]/.test(str));
-}
-
-function validateEmailAddress () {
-  let emailvalue = email.value;
-  if (!isLowercase(emailvalue)) {
-    error.style.display = 'block';
-    submitbtn.disabled = true;
-    error.innerHTML = 'Input must be in lower case';
+const error = document.querySelector('.error-message');
+/* the below function will check if the email entered is fully lowerCase */
+function emailCheckLowerCase(e) {
+  if (email.value !== email.value.toLowerCase()) {
+    error.classList.remove('hide');
+    e.preventDefault();
   } else {
-    error.style.display = 'none';
-    error.innerHTML = '';
-    submitbtn.disabled = false;
-  };
-
-  (function () {
-    email.addEventListener('input', () => {
-      validateEmailAddress();
-    });
-    form.addEventListener('submit', () => {
-      validateEmailAddress();
-    });
-  })();
-
-};
+    error.classList.add('hide');
+  }
+}
+form.addEventListener('change', emailCheckLowerCase);
+form.addEventListener('submit', emailCheckLowerCase);
