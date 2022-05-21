@@ -34,9 +34,11 @@ function emailCheckLowerCase() {
   let result = false;
   if (email.value !== email.value.toLowerCase()) {
     error.classList.remove('hide');
+    submitbtn.disable = true;
   } else {
     error.classList.add('hide');
     result = true;
+    submitbtn.disable = false;
   }
   return result;
 }
@@ -44,6 +46,33 @@ function emailCheckLowerCase() {
 submitbtn.onclick = function () {
   if (emailCheckLowerCase() === true) {
     myform.submit();
+    storeToLocalStorage();
+    alert("submitted");
   }
 };
-// myform.addEventListener('change', emailCheckLowerCase);
+
+// local storage
+const txtname = document.getElementById('txt-name');
+const comment = document.getElementById('txt-text');
+function storeToLocalStorage(){
+  const data = {
+    email: email.value,
+    name: txtname.value,
+    comment: comment.value,
+  };
+  alert(JSON.stringify(data));
+  localStorage.setItem("formdata",JSON.stringify(data));
+}
+
+function getLocalStorageData(){
+  var data = JSON.parse(localStorage.getItem("formdata"));
+  console.log(data);
+  email.value = data.email;
+  txtname.value = data.name;
+  comment.value = data.comment;
+}
+// to refill the the text areas
+
+if (localStorage.getItem("formdata") != null){
+  getLocalStorageData();
+}
