@@ -60,8 +60,8 @@ inputFields.forEach((trigger) => {
       nname = trigger.value;
     }
 
-    if (trigger.attributes.id.value ==='txt-text') {
-      ncomment= trigger.value;
+    if (trigger.attributes.id.value === 'txt-text') {
+      ncomment = trigger.value;
     }
 
     const data = {
