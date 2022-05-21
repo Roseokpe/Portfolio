@@ -49,29 +49,28 @@ const comment = document.getElementById('txt-text');
 const inputFields = document.querySelectorAll('.input-fields');
 inputFields.forEach((trigger) => {
   trigger.addEventListener('keyup', () => {
-  let nemail = email.value;
-  let nname = txtname.value;
-  let ncomment = comment.value;
-  if (trigger.attributes.id.value == 'email'){
-    nemail = trigger.value;
-  }
+    let nemail = email.value;
+    let nname = txtname.value;
+    let ncomment = comment.value;
+    if (trigger.attributes.id.value === 'email') {
+      nemail = trigger.value;
+    }
 
-  if (trigger.attributes.id.value == 'txt-name'){
-    nname = trigger.value;
-  }
+    if (trigger.attributes.id.value === 'txt-name') {
+      nname = trigger.value;
+    }
 
-  if (trigger.attributes.id.value == 'txt-text'){
-    ncomment= trigger.value;
-  }
+    if (trigger.attributes.id.value ==='txt-text') {
+      ncomment= trigger.value;
+    }
 
-  const data = {
-    email: nemail,
-    name: nname,
-    comment: ncomment,
-  };
-  localStorage.setItem('formdata', JSON.stringify(data));
+    const data = {
+      email: nemail,
+      name: nname,
+      comment: ncomment,
+    };
+    localStorage.setItem('formdata', JSON.stringify(data));
   });
-
 });
 
 function storeToLocalStorage() {

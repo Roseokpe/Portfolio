@@ -1,5 +1,5 @@
-# Portfolio: Popup Window
- In this milestone of my portfolio website,I implement a client-side validation of the data in the contact form before submission.
+# Portfolio: preserve data in the browser
+In this final milestone of my portfolio website, I save the form data in the local storage of the browser. That way when the user reloads the page the data they filled out in the form will be preserved.
 
 ## Built with 
     Major Languages
