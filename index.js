@@ -50,3 +50,44 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 }
+
+// email validation
+var email = document.getElementById('email');
+var error = document.getElementById('error-msg');
+var form = document.getElementById('myform');
+var submitbtn = document.getElementById('submitbtn');
+
+
+
+(function () {
+ 
+  email.addEventListener('input', (vvt) => {
+    
+    
+    validateEmailAddress();
+  });
+
+  form.addEventListener('submit', () => {
+    validateEmailAddress();
+  });
+  
+})();
+
+// to check if the strings are in lower case
+function isLowercase(str){
+  return (/[a-z]/.test(str));
+}
+
+function validateEmailAddress() {
+  emailvalue = email.value;
+ 
+  if (!isLowercase(emailvalue)) {
+    error.style.display = 'block';
+    submitbtn.disabled = true;
+    error.innerHTML = 'Input must be in lower case';
+  } else {
+    error.style.display = 'none';
+    error.innerHTML = '';
+    submitbtn.disabled = false;
+  }
+}
