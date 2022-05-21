@@ -43,7 +43,6 @@ function emailCheckLowerCase() {
   return result;
 }
 
-
 // local storage
 const txtname = document.getElementById('txt-name');
 const comment = document.getElementById('txt-text');
@@ -63,7 +62,7 @@ submitbtn.onclick = function () {
 };
 
 function getLocalStorageData() {
-  let data = JSON.parse(localStorage.getItem('formdata'));
+  const data = JSON.parse(localStorage.getItem('formdata'));
   console.log(data);
   email.value = data.email;
   txtname.value = data.name;
