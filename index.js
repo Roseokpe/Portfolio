@@ -28,25 +28,23 @@ document.querySelector('.menu-list').addEventListener('click', hideMenu);
 const modal = document.getElementById('myModal');
 (function () {
   document.querySelectorAll('.raise-modal').forEach(function (trigger) {
-      trigger.addEventListener('click', function () {
-          modal.style.display = 'block';
-      });
+    trigger.addEventListener('click', function () {
+      modal.style.display = 'block';
+    });
   });
-  
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    };
+  };
 })();
 
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on (x), it close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = 'none';
-}
-
-// When the user clicks anywhere outside of the modal, close it
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-}
+};

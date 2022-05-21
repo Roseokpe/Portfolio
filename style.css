@@ -486,13 +486,14 @@ hr {
   from {
     top: -300px;
     opacity: 0;
-  } 
 
-  to {
-    top: 0; 
-    opacity: 1;
   }
-
+  
+  to {
+    top: 0;
+    opacity: 1;
+  
+  }
 }
 
 @keyframes animatetop {
@@ -504,6 +505,7 @@ hr {
   to {
     top: 0;
     opacity: 1;
+
   }
 }
 
