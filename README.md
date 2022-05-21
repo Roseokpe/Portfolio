@@ -1,5 +1,5 @@
 # Portfolio: Popup Window
-In milestone of my portfolio website, I implemented a popup window that includes the project details in both desktop and mobile.
+ In this milestone of my portfolio website,I implement a client-side validation of the data in the contact form before submission.
 
 ## Built with 
     Major Languages
