@@ -12,10 +12,14 @@ In this final milestone of my portfolio website, I save the form data in the loc
     - Linters
 
 ## setup details 
-You can access it from your browser
+You can access it from your browser with the Live demo link
 
 ## Live Demo
- https://roseokpe.github.io/Portfolio/
+ [Live Demo](https://roseokpe.github.io/Portfolio/)
+ 
+ ## Author:
+ [Linkedin](https://www.linkedin.com/in/rose-okpe-0334b5177/)
+ [Email](Roseokpe@gmail.com)
 
 ## Show your support
     Give a star if you like this project
