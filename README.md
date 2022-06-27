@@ -22,7 +22,8 @@ You can access it from your browser with the Live demo link
  [Email](Roseokpe@gmail.com)
 
 ## Show your support
-    Give a star if you like this project
+
+Give a ⭐️ if you like this project!
 
 # Acknowledgements
   -   Hat tip to anyone whose code was used
