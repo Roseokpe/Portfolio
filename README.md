@@ -47,7 +47,7 @@ The following tools help make easier to work with sample code.
  
 👤 **Rose Okpe**
 
-- [Linkedin](https://www.linkedin.com/in/rose-okpe-0334b5177/)
+- [Linkedin](https://www.linkedin.com/in/roseokpe/)
 - [Git](https://github.com/Roseokpe)
 - [Twitter](https://twitter.com/roseokpe)
 
