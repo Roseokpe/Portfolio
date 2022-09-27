@@ -45,10 +45,11 @@ The following tools help make easier to work with sample code.
  
  ## Authors
  
- 👤 **Rose Okpe**
- [Linkedin](https://www.linkedin.com/in/rose-okpe-0334b5177/)
- [Git](https://github.com/Roseokpe)
- [Twitter](https://twitter.com/roseokpe)
+👤 **Rose Okpe**
+
+- [Linkedin](https://www.linkedin.com/in/rose-okpe-0334b5177/)
+- [Git](https://github.com/Roseokpe)
+- [Twitter](https://twitter.com/roseokpe)
 
 ## 🤝 Contributing
 
