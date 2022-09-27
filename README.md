@@ -20,7 +20,7 @@ To get a local copy up and running, follow the steps in Setup below.
 Basic knowledge of HTML, CSS, and JavaScript.
 
 ### Setup
-If you installed git you can clone the code to your machine by 'git clone https://github.com/Roseokpe/Portfolio.git'.
+If you installed git you can clone the code to your machine.
 
 ```bash
 git clone https://github.com/Roseokpe/Portfolio.git
