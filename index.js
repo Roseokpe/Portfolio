@@ -1,183 +1,209 @@
-const hamburger = document.querySelector('.hamburger');
-const menuitems = document.querySelector('.menu-list');
+//
+// Menu mobile toggle active
+//
+
+const body = document.querySelector('body');
+const header = document.querySelector('header');
+const hamburger = document.querySelector('.menu_mob');
+
+// Classes for close menu
+const classNames = ['fa-x', 'menu_link', 'fa-solid', 'fa-envelope'];
 
 hamburger.addEventListener('click', () => {
-  document.querySelector('.mobile-menu').style.display = 'block';
+  header.classList.add('active');
+  body.classList.add('noscroll');
 });
 
-menuitems.addEventListener('click', () => {
-  menuitems.classList.toggle('.mobile-menu');
+header.addEventListener('click', (event) => {
+  const clickedElementClassName = event.target.classList[0];
+  const shouldToggle = classNames.some((className) => className === clickedElementClassName);
+
+  if (shouldToggle && header.classList.contains('active')) {
+    header.classList.remove('active');
+    body.classList.remove('noscroll');
+  }
 });
 
-function showMenu() {
-  document.querySelector('.mobile-menu').style.display = 'block';
-}
+window.addEventListener('resize', () => {
+  if (header.classList.contains('active')) {
+    header.classList.remove('active');
+    body.classList.remove('noscroll');
+  }
+});
 
-function hideMenu() {
-  document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.work-container').style.display = 'block';
-  document.querySelector('.contact-container').style.display = 'block';
-  document.querySelector('.footer').style.display = 'block';
-}
+//
+// Array of projects objects
+//
 
-document.getElementById('hamburger-id').addEventListener('click', showMenu);
-document.getElementById('cancel-id').addEventListener('click', hideMenu);
-document.querySelector('.menu-list').addEventListener('click', hideMenu);
-
-// popup
 const projects = [{
-  id: '001',
-  name: 'Multi - Post stories-1',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: 'images/Snapshoot-Portfolio.png',
-  technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
-  link: 'link_to_live_version.com',
-},
-{
-  id: '002',
-  name: 'Multi - Post stories-2',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been theindustrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: 'images/Img-Placeholder.png',
-  technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
-  link: 'link_to_live_version.com',
-},
-{
-  id: '003',
-  name: 'Multi - Post stories-3',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: 'images/Snapshoot-Portfolio.png',
-  technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
-  link: 'link_to_live_version.com',
-},
-{
-  id: '004',
-  name: 'Multi - Post stories-4',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: 'images/Snapshoot-Portfolio.png',
-  technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
-  link: 'link_to_live_version.com',
+  name: 'Cargogo Rentals',
+  description: 'CarGoGo is an online rental platform that offers a user-friendly and efficient way for customers to rent cars. Once a customer has found a car that they like, CarGoGo makes it easy for them to favorite it. Customers can save or delete their favorite cars for future rentals.',
+  featuredImage: 'images/cargogo.png',
+  altTextImage: 'cargogo main page',
+  technologies: ['React', 'RoR', 'Tailwind','PostgreSQL'],
+  linkLiveVersion: 'frabjous-profiterole-723fe2.netlify.app/',
+  linkSource: 'https://github.com/Roseokpe/CarGoGo-Backend',
+}, {
+  name: 'Space Traveller booking app',
+  description: 'Real-time data from the SpaceX API is used by this application. Users can join particular space missions and reserve rockets using it.',
+  featuredImage: 'images/space-traveller-app.png',
+  altTextImage: 'Origami main page',
+  technologies: ['RestApi', 'Reactjs', 'Redux','Boostrap'],
+  linkLiveVersion: 'https://space-travellers-97.netlify.app/',
+  linkSource: 'https://github.com/Roseokpe/space-travellers',
+}, {
+  name: 'Budgetrite App',
+  description: 'This app makes budgeting seamless.It allows user to signup, create categories, document transactions, keep user balance and more',
+  featuredImage: 'images/budgetRite.PNG',
+  altTextImage: 'Budgetrite app main page',
+  technologies: ['RoR', 'Ruby', 'PostgreSQL ', 'Rspec'],
+  linkLiveVersion: 'not availabile',
+  linkSource: 'https://github.com/Roseokpe/budgetrite',
+}, {
+  name: 'Covid-19 pandemic in South America',
+  description: 'This is a web application that will display the live total number of COVID-19 cases around the world.The users can quickly search for any specific country of their choosing.',
+  featuredImage: 'images/stats-app.png',
+  altTextImage: 'Covid-19 home page',
+  technologies: ['React', 'Redux', 'JavaScript'],
+  linkLiveVersion: 'https://willowy-biscuit-94b35f.netlify.app',
+  linkSource: 'https://github.com/Roseokpe/covid-stats',
 }];
 
-function fillModal(e) {
-  const h2 = document.querySelector('.modal-content h2');
-  const p = document.querySelector('.modal-content p');
-  const img = document.querySelector('.modal-image');
-  const items = document.querySelectorAll('.modal-link li');
-  h2.textContent = e.name;
-  p.textContent = e.description;
-  img.src = e.image;
-  for (let i = 0; i < items.length; i += 1) {
-    items[i].textContent = e.technologies[i];
+//
+// Project sections created when page loads
+//
+
+const portfolio = document.getElementById('portfolio');
+
+for (let i = projects.length - 1; i >= 0; i -= 1) {
+  const section = document.createElement('section');
+  section.className = 'proj';
+
+  const img = document.createElement('img');
+  img.src = projects[i].featuredImage;
+  img.alt = projects[i].altTextImage;
+  section.appendChild(img);
+
+  const h3 = document.createElement('h3');
+  h3.className = 'colorfff fw500';
+  h3.innerText = projects[i].name;
+  section.appendChild(h3);
+
+  const p = document.createElement('p');
+  p.className = 'ff_inter fw400';
+  p.innerText = projects[i].description;
+  section.appendChild(p);
+
+  const ul = document.createElement('ul');
+
+  for (let k = 0; k < projects[i].technologies.length; k += 1) {
+    const li = document.createElement('li');
+    li.className = 'colorfff ff_inter fw500';
+    li.innerText = projects[i].technologies[k];
+    ul.appendChild(li);
   }
+
+  section.appendChild(ul);
+
+  const button = document.createElement('button');
+  button.type = 'button';
+  /* create a class with the object id number after underline */
+  button.className = `_${i} colorfff`;
+  button.innerText = 'See project';
+  section.appendChild(button);
+  portfolio.insertAdjacentElement('afterend', section);
 }
 
-function getModalData(key, obj) {
-  for (let i = 0; i < obj.length; i += 1) {
-    if (obj[i].id === key) {
-      return obj[i];
+//
+// Project popup window
+//
+
+const seeProjectButtons = document.querySelectorAll('.proj button');
+
+seeProjectButtons.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const i = parseInt(e.target.classList[0].substring(1), 10);
+    const popupWrapper = document.createElement('div');
+    popupWrapper.className = 'popup_wrapper';
+    popupWrapper.id = 'popup_container';
+
+    // Close popup window click on "X" or outside the popup
+
+    popupWrapper.addEventListener('click', (e) => {
+      if (e.target.id === 'popup_container' || e.target.classList[0] === 'popup_close') {
+        popupWrapper.remove();
+      }
+    });
+
+    const article = document.createElement('article');
+    const div = document.createElement('div');
+
+    const h1 = document.createElement('h1');
+    h1.className = 'colorfff fw500';
+    h1.innerText = projects[i].name;
+    div.appendChild(h1);
+
+    const i0 = document.createElement('i');
+    i0.className = 'popup_close colorfff fa-solid fa-x';
+    div.appendChild(i0);
+    article.appendChild(div);
+
+    const img1 = document.createElement('img');
+    img1.src = projects[i].featuredImage;
+    img1.alt = projects[i].altTextImage;
+    article.appendChild(img1);
+
+    const p2 = document.createElement('p');
+    p2.className = 'colorfff fw400';
+    p2.innerText = projects[i].description;
+    article.appendChild(p2);
+
+    const ul1 = document.createElement('ul');
+
+    for (let k = 0; k < projects[i].technologies.length; k += 1) {
+      const li = document.createElement('li');
+      li.className = 'colorfff ff_inter fw500';
+      li.innerText = projects[i].technologies[k];
+      ul1.appendChild(li);
     }
-  }
-  return null;
-}
-const modal = document.getElementById('myModal');
-const raiseModal = document.querySelectorAll('.raise-modal');
-raiseModal.forEach((trigger) => {
-  trigger.addEventListener('click', () => {
-    const data = getModalData(trigger.attributes.id.value, projects);
-    fillModal(data);
-    modal.style.display = 'block';
+
+    article.appendChild(ul1);
+
+    const div1 = document.createElement('div');
+
+    const button1 = document.createElement('button');
+    button1.className = 'colorfff fw500';
+
+    const a1 = document.createElement('a');
+    a1.href = projects[i].linkLiveVersion;
+
+    const span = document.createElement('span');
+    span.innerText = 'See Live';
+    a1.appendChild(span);
+
+    const img = document.createElement('img');
+    img.src = 'images/icons-live.svg';
+    a1.appendChild(img);
+    button1.appendChild(a1);
+    div1.appendChild(button1);
+
+    const button2 = document.createElement('button');
+    button2.className = 'colorfff fw500';
+
+    const a2 = document.createElement('a');
+    a2.href = projects[i].linkSource;
+
+    const span1 = document.createElement('span');
+    span1.innerText = 'See Source';
+    a2.appendChild(span1);
+
+    const i1 = document.createElement('i');
+    i1.className = 'fa-brands fa-github';
+    a2.appendChild(i1);
+    button2.appendChild(a2);
+    div1.appendChild(button2);
+    article.appendChild(div1);
+    popupWrapper.appendChild(article);
+    portfolio.insertAdjacentElement('afterend', popupWrapper);
   });
 });
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-};
-
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName('close')[0];
-
-// When the user clicks on (x), it close the modal
-span.onclick = function () {
-  modal.style.display = 'none';
-};
-
-// Email validatetion
-const myform = document.getElementById('myform');
-const email = document.getElementById('email');
-const error = document.querySelector('.error-msg');
-const submitbtn = document.getElementById('submitbtn');
-// the function below check if the email address is all lowercase or not //
-function emailCheckLowerCase() {
-  let result = false;
-  if (email.value !== email.value.toLowerCase()) {
-    error.classList.remove('hide');
-    submitbtn.disable = true;
-  } else {
-    error.classList.add('hide');
-    result = true;
-    submitbtn.disable = false;
-  }
-  return result;
-}
-
-// local storage
-const txtname = document.getElementById('txt-name');
-const comment = document.getElementById('txt-text');
-const inputFields = document.querySelectorAll('.input-fields');
-inputFields.forEach((trigger) => {
-  trigger.addEventListener('keyup', () => {
-    let nemail = email.value;
-    let nname = txtname.value;
-    let ncomment = comment.value;
-    if (trigger.attributes.id.value === 'email') {
-      nemail = trigger.value;
-    }
-
-    if (trigger.attributes.id.value === 'txt-name') {
-      nname = trigger.value;
-    }
-
-    if (trigger.attributes.id.value === 'txt-text') {
-      ncomment = trigger.value;
-    }
-
-    const data = {
-      email: nemail,
-      name: nname,
-      comment: ncomment,
-    };
-    localStorage.setItem('formdata', JSON.stringify(data));
-  });
-});
-
-function storeToLocalStorage() {
-  const data = {
-    email: email.value,
-    name: txtname.value,
-    comment: comment.value,
-  };
-  localStorage.setItem('formdata', JSON.stringify(data));
-}
-
-submitbtn.onclick = function () {
-  if (emailCheckLowerCase() === true) {
-    myform.submit();
-    storeToLocalStorage();
-  }
-};
-
-function getLocalStorageData() {
-  const data = JSON.parse(localStorage.getItem('formdata'));
-  console.log(data);
-  email.value = data.email;
-  txtname.value = data.name;
-  comment.value = data.comment;
-}
-// to refill the the text areas
-
-if (localStorage.getItem('formdata') != null) {
-  getLocalStorageData();
-}
