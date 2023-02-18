@@ -40,7 +40,7 @@ const projects = [{
   description: 'CarGoGo is an online rental platform that offers a user-friendly and efficient way for customers to rent cars. Once a customer has found a car that they like, CarGoGo makes it easy for them to favorite it. Customers can save or delete their favorite cars for future rentals.',
   featuredImage: 'images/cargogo.png',
   altTextImage: 'cargogo main page',
-  technologies: ['React', 'RoR', 'Tailwind','PostgreSQL'],
+  technologies: ['React', 'RoR', 'Tailwind', 'PostgreSQL'],
   linkLiveVersion: 'frabjous-profiterole-723fe2.netlify.app/',
   linkSource: 'https://github.com/Roseokpe/CarGoGo-Backend',
 }, {
@@ -48,7 +48,7 @@ const projects = [{
   description: 'Real-time data from the SpaceX API is used by this application. Users can join particular space missions and reserve rockets using it.',
   featuredImage: 'images/space-traveller-app.png',
   altTextImage: 'Origami main page',
-  technologies: ['RestApi', 'Reactjs', 'Redux','Boostrap'],
+  technologies: ['RestApi', 'Reactjs', 'Redux', 'Boostrap'],
   linkLiveVersion: 'https://space-travellers-97.netlify.app/',
   linkSource: 'https://github.com/Roseokpe/space-travellers',
 }, {
