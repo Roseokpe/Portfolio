@@ -56,7 +56,7 @@ const projects = [{
   description: 'The Bookstore is a website that Display a list of books and user can Add a book and Remove a selected book.',
   featuredImage: 'images/bookstore.png',
   altTextImage: 'Bookstore app main page',
-  technologies: ['Reactjs',' CSS','RestApi', 'JavaScript'],
+  technologies: ['Reactjs', ' CSS', 'RestApi', 'JavaScript'],
   linkLiveVersion: 'https://liberty-bookstore.netlify.app/',
   linkSource: 'https://github.com/Roseokpe/bookstore',
 }, {
@@ -287,4 +287,3 @@ function getLocalStorageData() {
 if (localStorage.getItem('formdata') != null) {
   getLocalStorageData();
 }
-
