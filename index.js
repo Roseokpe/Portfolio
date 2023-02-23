@@ -58,7 +58,7 @@ const projects = [{
   altTextImage: 'Bookstore app main page',
   technologies: ['Reactjs',' CSS','RestApi', 'JavaScript'],
   linkLiveVersion: 'https://liberty-bookstore.netlify.app/',
-  linkSource: 'https://github.com/Roseokpe/budgetrite',
+  linkSource: 'https://github.com/Roseokpe/bookstore',
 }, {
   name: 'Covid-19 pandemic in South America',
   description: 'This is a web application that will display the live total number of COVID-19 cases around the world.The users can quickly search for any specific country of their choosing.',
