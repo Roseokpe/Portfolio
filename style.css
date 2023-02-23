@@ -569,6 +569,85 @@ footer {
   letter-spacing: 0.03em;
 }
 
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 24px;
+  margin-right: 20px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+  position: static;
+  width: 327px;
+  left: 24px;
+  top: 324px;
+}
+
+.contact-container .frame42 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.form .name-field {
+  display: none;
+}
+
+.contact-container form input {
+  width: 90%;
+  height: 48px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #9390ff;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-container p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+.contact-container form textarea {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 48px;
+  padding-left: 20px;
+}
+
+#error-msg {
+  color: red;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* email vali. */
+#myform .error-msg {
+  color: red;
+}
+
 @media only screen and (min-width: 768px) {
   .qual li {
     font-size: 14.1935px;
@@ -802,6 +881,35 @@ footer {
     color: #ebebff;
     line-height: 28px;
     margin-top: 24px;
+  }
+
+  .contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 38px 24px;
+  }
+
+  .contact-tittle2 {
+    display: block;
+    color: #9390ff;
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 684px;
+    padding-top: 24px;
+  }
+
+  .contact-tittle1 {
+    display: none;
   }
 
   footer {

@@ -41,7 +41,7 @@ const projects = [{
   featuredImage: 'images/cargogo.PNG',
   altTextImage: 'cargogo main page',
   technologies: ['ReactJs', 'RoR', 'Tailwind', 'PostgreSQL'],
-  linkLiveVersion: 'frabjous-profiterole-723fe2.netlify.app/',
+  linkLiveVersion: 'https://frabjous-profiterole-723fe2.netlify.app/',
   linkSource: 'https://github.com/Roseokpe/CarGoGo-Backend',
 }, {
   name: 'Space Traveller booking app',
@@ -52,12 +52,12 @@ const projects = [{
   linkLiveVersion: 'https://space-travellers-97.netlify.app/',
   linkSource: 'https://github.com/Roseokpe/space-travellers',
 }, {
-  name: 'Budgetrite App',
-  description: 'This app makes budgeting seamless.It allows user to signup, create categories, document transactions, keep user balance and more',
-  featuredImage: 'images/budgetRite.PNG',
-  altTextImage: 'Budgetrite app main page',
-  technologies: ['RoR', 'Ruby', 'PostgreSQL ', 'Rspec'],
-  linkLiveVersion: 'not availabile',
+  name: 'Bookstore App',
+  description: 'The Bookstore is a website that Display a list of books and user can Add a book and Remove a selected book.',
+  featuredImage: 'images/bookstore.png',
+  altTextImage: 'Bookstore app main page',
+  technologies: ['Reactjs',' CSS','RestApi', 'JavaScript'],
+  linkLiveVersion: 'https://liberty-bookstore.netlify.app/',
   linkSource: 'https://github.com/Roseokpe/budgetrite',
 }, {
   name: 'Covid-19 pandemic in South America',
@@ -207,3 +207,84 @@ seeProjectButtons.forEach((btn) => {
     portfolio.insertAdjacentElement('afterend', popupWrapper);
   });
 });
+
+// contact form
+
+// Email validatetion
+const myform = document.getElementById('myform');
+const email = document.getElementById('email');
+const error = document.querySelector('.error-msg');
+const submitbtn = document.getElementById('submitbtn');
+// the function below check if the email address is all lowercase or not //
+function emailCheckLowerCase() {
+  let result = false;
+  if (email.value !== email.value.toLowerCase()) {
+    error.classList.remove('hide');
+    submitbtn.disable = true;
+  } else {
+    error.classList.add('hide');
+    result = true;
+    submitbtn.disable = false;
+  }
+  return result;
+}
+
+// local storage
+const txtname = document.getElementById('txt-name');
+const comment = document.getElementById('txt-text');
+const inputFields = document.querySelectorAll('.input-fields');
+inputFields.forEach((trigger) => {
+  trigger.addEventListener('keyup', () => {
+    let nemail = email.value;
+    let nname = txtname.value;
+    let ncomment = comment.value;
+    if (trigger.attributes.id.value === 'email') {
+      nemail = trigger.value;
+    }
+
+    if (trigger.attributes.id.value === 'txt-name') {
+      nname = trigger.value;
+    }
+
+    if (trigger.attributes.id.value === 'txt-text') {
+      ncomment = trigger.value;
+    }
+
+    const data = {
+      email: nemail,
+      name: nname,
+      comment: ncomment,
+    };
+    localStorage.setItem('formdata', JSON.stringify(data));
+  });
+});
+
+function storeToLocalStorage() {
+  const data = {
+    email: email.value,
+    name: txtname.value,
+    comment: comment.value,
+  };
+  localStorage.setItem('formdata', JSON.stringify(data));
+}
+
+submitbtn.onclick = function () {
+  if (emailCheckLowerCase() === true) {
+    myform.submit();
+    storeToLocalStorage();
+  }
+};
+
+function getLocalStorageData() {
+  const data = JSON.parse(localStorage.getItem('formdata'));
+  console.log(data);
+  email.value = data.email;
+  txtname.value = data.name;
+  comment.value = data.comment;
+}
+// to refill the the text areas
+
+if (localStorage.getItem('formdata') != null) {
+  getLocalStorageData();
+}
+
