@@ -40,7 +40,7 @@ The following tools help make easier to work with sample code.
 
 
 ## Live Demo
- [Live Demo](https://roseokpe.github.io/Portfolio/)
+ [Live Demo](https://roseokpe-portfolio.netlify.app/)
  
  
  ## Authors
