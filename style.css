@@ -175,6 +175,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 60px 24px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #191765;
 }
 
 header.active {
