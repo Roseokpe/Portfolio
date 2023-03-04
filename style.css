@@ -426,10 +426,6 @@ header.active .menu_dsk li {
   flex-grow: 0;
 }
 
-.proj img:hover{
-  transform: scale(1.1);
-}
-
 .proj h3 {
   font-size: 32px;
   align-self: flex-start;
@@ -552,6 +548,10 @@ footer {
   line-height: 24px;
   text-align: center;
   padding: 24px;
+}
+
+.proj img:hover{
+  transform: scale(1.1);
 }
 
 .popup_wrapper article div:last-child {
@@ -704,7 +704,7 @@ footer {
     align-items: center;
   }
 
-  header .transformation >*:hover {
+  header .transformation > *:hover {
     transform: scale(1.2);
   }
 
