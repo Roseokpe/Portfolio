@@ -426,6 +426,10 @@ header.active .menu_dsk li {
   flex-grow: 0;
 }
 
+.proj img:hover{
+  transform: scale(1.1);
+}
+
 .proj h3 {
   font-size: 32px;
   align-self: flex-start;
@@ -698,6 +702,10 @@ footer {
     display: flex;
     gap: 15px;
     align-items: center;
+  }
+
+  header .transformation >*:hover {
+    transform: scale(1.2);
   }
 
   header .menu_dsk li {
