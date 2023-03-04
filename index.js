@@ -53,7 +53,7 @@ const projects = [{
   linkSource: 'https://github.com/Roseokpe/space-travellers',
 }, {
   name: 'Bookstore App',
-  description: 'The Bookstore is a website that Display a list of books and user can Add a book and Remove a selected book.',
+  description: 'The bookstore is a website similar to a library that Displays list of books, users can Add books, and Remove books.',
   featuredImage: 'images/bookstore.png',
   altTextImage: 'Bookstore app main page',
   technologies: ['Reactjs', ' CSS', 'RestApi', 'JavaScript'],
@@ -61,7 +61,7 @@ const projects = [{
   linkSource: 'https://github.com/Roseokpe/bookstore',
 }, {
   name: 'Covid-19 pandemic in South America',
-  description: 'This is a web application that will display the live total number of COVID-19 cases around the world.The users can quickly search for any specific country of their choosing.',
+  description: 'This is a web application that will display the live total number of COVID-19 cases around the world. Users can quickly search for any specific country of their choice.',
   featuredImage: 'images/stats-app.png',
   altTextImage: 'Covid-19 home page',
   technologies: ['React', 'Redux', 'JavaScript'],

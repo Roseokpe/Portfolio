@@ -175,6 +175,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 60px 24px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #191765;
 }
 
 header.active {
@@ -544,6 +550,10 @@ footer {
   padding: 24px;
 }
 
+.proj img:hover {
+  transform: scale(1.1);
+}
+
 .popup_wrapper article div:last-child {
   display: flex;
   flex-direction: column;
@@ -692,6 +702,10 @@ footer {
     display: flex;
     gap: 15px;
     align-items: center;
+  }
+
+  header .transformation > *:hover {
+    transform: scale(1.2);
   }
 
   header .menu_dsk li {
